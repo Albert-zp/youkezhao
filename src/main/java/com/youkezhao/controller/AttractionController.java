@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @RestController
-@RequestMapping("/attractions")
+@RequestMapping("/api/attractions")
 public class AttractionController {
 
     private final AttractionService attractionService;
@@ -22,8 +22,9 @@ public class AttractionController {
     }
 
     // 获取所有景点
-    @GetMapping("/api/attractions")
+    @GetMapping
     public List<Attraction> getAllAttractions() {
+
         return attractionService.getAllAttractions();
     }
 
