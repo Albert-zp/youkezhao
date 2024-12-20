@@ -22,7 +22,6 @@ public class AttractionController {
     }
 
     // 获取所有景点
-
     @GetMapping
     public List<Attraction> getAllAttractions() {
 
